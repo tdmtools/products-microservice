@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "northamerica-northeast1-docker.pkg.dev/tienda-microservices/image-registry/products-ms",
+        "northamerica-south1-docker.pkg.dev/orders-portal-447714/nestjs-course/image-registry/products-ms",
         "-f",
         "dockerfile.prod",
         "--platform=linux/amd64",
@@ -14,5 +14,8 @@ steps:
     args:
       [
         "push",
-        "northamerica-northeast1-docker.pkg.dev/tienda-microservices/image-registry/products-ms",
+        "northamerica-south1-docker.pkg.dev/orders-portal-447714/nestjs-course/image-registry/products-ms",
       ]
+
+options:
+  logging: CLOUD_LOGGING_ONLY
